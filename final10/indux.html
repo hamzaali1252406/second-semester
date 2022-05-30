@@ -1,0 +1,221 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Comparision using jquery</title>
+    <link rel="icon" href="../../images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/e-project-1.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    
+    <div class="w3-center">
+        <h1>Product Comparision</h1>
+    </div>
+    <div class="w3-container">
+        <div class="w3-row-padding">
+            
+            <div class="w3-col l3 m6  relPos w3-center ">
+                <div class="selectProduct w3-padding" data-title="Nexus5" data-id="Nexus 5" data-size="4.9" data-weight="130 g" data-processor="2.3 GHz, Quad Core, Qualcomm Snapdragon 800" data-battery="2300 mAH">
+                    <a class="w3-btn-floating w3-light-blue addButtonCircular addToCompare">+</a>
+                    <img src="images/1.png" class="imgFill productImg">
+                    <h4>Oneplus 6</h4>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 relPos w3-center">
+                <div class="selectProduct w3-padding" data-title="Nexus5X" data-id="Nexus 5X" data-size="5.2" data-weight="136 g" data-processor="1.44 GHz, Quad Core, Qualcomm Snapdragon 808" data-battery="2700 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="https://www.yaantra.com/ItemImages/Catalog/Products/ThumbNail/RCMot0271_1.jpg" class="imgFill productImg">
+                    <h4>Motorola Moto</h4>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 relPos  w3-center ">
+                <div class="selectProduct w3-padding" data-title="Nexus6" data-id="Nexus 6" data-size="6" data-weight="184 g" data-processor="2.7 GHz, Quad Core, Qualcomm Snapdragon 805" data-battery="3220 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="https://www.yaantra.com/ItemImages/Catalog/Products/ThumbNail/RCLG0055_1.jpg" class="imgFill productImg">
+                    <h4>LG Q6</h4>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 relPos  w3-center">
+                <div class="selectProduct w3-padding" data-title="Nexus6P" data-id="Nexus 6P" data-size="5.7" data-weight="178 g" data-processor="1.55 GHz, Octa Core, Qualcomm Snapdragon 810 " data-battery="3450 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="https://www.yaantra.com/ItemImages/Catalog/Products/ThumbNail/RCHon0060_1.jpg" class="imgFill productImg">
+                    <h4>Honor 8 Pro</h4>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6  relPos w3-center ">
+                <div class="selectProduct w3-padding" data-title="Nexus5" data-id="Nexus 5" data-size="4.9" data-weight="130 g" data-processor="2.3 GHz, Quad Core, Qualcomm Snapdragon 800" data-battery="2300 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="https://www.yaantra.com/ItemImages/Catalog/Products/ThumbNail/RCOne0054_4.jpg" class="imgFill productImg">
+                    <h4>Oneplus 6</h4>
+                </div>
+            </div>
+            <div class="w3-col l3 m6  relPos w3-center ">
+                <div class="selectProduct w3-padding" data-title="Nexus5" data-id="Nexus 5" data-size="4.9" data-weight="130 g" data-processor="2.3 GHz, Quad Core, Qualcomm Snapdragon 800" data-battery="2300 mAH">
+                    <a class="w3-btn-floating w3-light-grey addButtonCircular addToCompare">+</a>
+                    <img src="https://www.yaantra.com/ItemImages/Catalog/Products/ThumbNail/RCOne0054_4.jpg" class="imgFill productImg">
+                    <h4>Oneplus 6</h4>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--preview panel-->
+    <div class="w3-container  w3-center">
+        <div class="w3-row w3-card-4 w3-light-blue w3-round-large w3-border comparePanle w3-margin-top">
+            <div class="w3-row">
+                <div class="w3-col l9 m8 s6 w3-margin-top">
+                    <h4>Added for comparison</h4>
+                </div>
+                <div class="w3-col l3 m4 s6 w3-margin-top">
+                     
+                    <button class="w3-btn w3-round-small w3-white w3-border notActive cmprBtn" disabled>Compare</button>
+                </div>
+            </div>
+            <div class=" titleMargin w3-container comparePan">
+            </div>
+        </div>
+    </div>
+    <!--end of preview panel-->
+    
+    <!-- comparision popup-->
+    <div id="id01" class="w3-animate-zoom w3-white w3-modal modPos">
+        <div class="w3-container">
+            <a onclick="document.getElementById('id01').style.display='none'" class="whiteFont w3-padding w3-closebtn closeBtn">×</a>
+        </div>
+        <div class="w3-row contentPop w3-margin-top">
+        </div>
+
+    </div>
+    <!--end of comparision popup-->
+
+    <!--  warning model  -->
+    <div id="WarningModal" class="w3-modal">
+        <div class="w3-modal-content warningModal">
+            <header class="w3-container w3-teal">
+                <h3><span>⚠</span>Error</h3>
+            </header>
+            <div class="w3-container">
+                <h4>Maximum of Three products are allowed for comparision</h4>
+
+            </div>
+            <footer class="w3-container w3-right-align">
+                <button id="warningModalClose" onclick="document.getElementById('id01').style.display='none'" class="w3-btn w3-hexagonBlue w3-margin-bottom  ">Ok</button>
+            </footer>
+        </div>
+    </div>
+    <!--  end of warning model  -->
+</body>
+</html>
+
+<!-- // comparission js -->
+<script>
+    (function ($) {
+  var list = [];
+
+  /* function to be executed when product is selected for comparision*/
+
+  $(document).on('click', '.addToCompare', function () {
+      $(".comparePanle").show();
+      $(this).toggleClass("rotateBtn");
+      $(this).parents(".selectProduct").toggleClass("selected");
+      var productID = $(this).parents('.selectProduct').attr('data-title');
+
+      var inArray = $.inArray(productID, list);
+      if (inArray < 0) {
+          if (list.length > 2) {
+              $("#WarningModal").show();
+              $("#warningModalClose").click(function () {
+                  $("#WarningModal").hide();
+              });
+              $(this).toggleClass("rotateBtn");
+              $(this).parents(".selectProduct").toggleClass("selected");
+              return;
+          }
+
+          if (list.length < 3) {
+              list.push(productID);
+
+              var displayTitle = $(this).parents('.selectProduct').attr('data-id');
+
+              var image = $(this).siblings(".productImg").attr('src');
+
+              $(".comparePan").append('<div id="' + productID + '" class="relPos titleMargin w3-margin-bottom   w3-col l3 m4 s4"><div class="w3-white titleMargin"><a class="selectedItemCloseBtn w3-closebtn cursor">&times</a><img src="' + image + '" alt="image" style="height:100px;"/><p id="' + productID + '" class="titleMargin1">' + displayTitle + '</p></div></div>');
+          }
+      } else {
+          list.splice($.inArray(productID, list), 1);
+          var prod = productID.replace(" ", "");
+          $('#' + prod).remove();
+          hideComparePanel();
+
+      }
+      if (list.length > 1) {
+
+          $(".cmprBtn").addClass("active");
+          $(".cmprBtn").removeAttr('disabled');
+      } else {
+          $(".cmprBtn").removeClass("active");
+          $(".cmprBtn").attr('disabled', '');
+      }
+
+  });
+  /*function to be executed when compare button is clicked*/
+  $(document).on('click', '.cmprBtn', function () {
+      if ($(".cmprBtn").hasClass("active")) {
+          /* this is to print the  features list statically*/
+          $(".contentPop").append('<div class="w3-col s3 m3 l3 compareItemParent relPos">' + '<ul class="product">' + '<li class=" relPos compHeader"><p class="w3-display-middle">Features</p></li>' + '<li>Title</li>' + '<li>Size</li>' + '<li>Weight</li>' + '<li class="cpu">Processor</li>' + '<li>Battery</li></ul>' + '</div>');
+
+          for (var i = 0; i < list.length; i++) {
+              /* this is to add the items to popup which are selected for comparision */
+              product = $('.selectProduct[data-title="' + list[i] + '"]');
+              var image = $('[data-title=' + list[i] + ']').find(".productImg").attr('src');
+              var title = $('[data-title=' + list[i] + ']').attr('data-id');
+              /*appending to div*/
+              $(".contentPop").append('<div class="w3-col s3 m3 l3 compareItemParent relPos">' + '<ul class="product">' + '<li class="compHeader"><img src="' + image + '" class="compareThumb"></li>' + '<li>' + title + '</li>' + '<li>' + $(product).data('size') + '</li>' + '<li>' + $(product).data('weight') + '<li class="cpu">' + $(product).data('processor') + '</li>' + '<li>' + $(product).data('battery') + '</ul>' + '</div>');
+          }
+      }
+      $(".modPos").show();
+  });
+
+  /* function to close the comparision popup */
+  $(document).on('click', '.closeBtn', function () {
+      $(".contentPop").empty();
+      $(".comparePan").empty();
+      $(".comparePanle").hide();
+      $(".modPos").hide();
+      $(".selectProduct").removeClass("selected");
+      $(".cmprBtn").attr('disabled', '');
+      list.length = 0;
+      $(".rotateBtn").toggleClass("rotateBtn");
+  });
+
+  /*function to remove item from preview panel*/
+  $(document).on('click', '.selectedItemCloseBtn', function () {
+
+      var test = $(this).siblings("p").attr('id');
+      $('[data-title=' + test + ']').find(".addToCompare").click();
+      hideComparePanel();
+  });
+
+  function hideComparePanel() {
+      if (!list.length) {
+          $(".comparePan").empty();
+          $(".comparePanle").hide();
+      }
+  }
+})(jQuery);
+</script>

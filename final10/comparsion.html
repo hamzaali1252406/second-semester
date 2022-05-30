@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blueprint: Product Comparison Layout &amp; Effect</title>
+		<!-- <meta name="description" content="Blueprint: A basic responsive product grid layout with comparison functionality" />
+		<meta name="keywords" content="blueprint, template, html, css, javascript, grid, layout, effect, product comparison" />
+		<meta name="author" content="Codrops" /> -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="css/e-project-1.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+	</head>
+	<body>
+
+
+    <!-- header -->
+    
+    <!-- <div class="container-fluid"> -->
+		<div id="header"></div>
+		<div class="bannar20">
+		
+		</div>
+	  <!-- </div> -->
+	  <!-- header end -->
+
+		<!-- Compare basket -->
+		<div class="compare-basket">
+			<button class="action action--button action--compare"><i class="fa fa-check"></i><span class="action__text">Compare</span></button>
+		</div>
+		<!-- Main view -->
+		<div class="view">
+			<!-- Blueprint header -->
+			<header class="bp-header cf">
+
+				<h1>Product Comparison</h1>
+
+			</header>
+			<!-- Product grid -->
+			<section class="grid">
+				<!-- Products -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/alovera-removebg-preview.png"    alt="Product 1" />
+                                <h3 class="product__title">Hair Cream</h3>
+                                <span class="product__year extra highlight">2010</span>
+                                <span class="product__region extra highlight">Alovera</span>
+                                <span class="product__varietal extra highlight">Natural Alovera</span>
+                                <span class="product__alcohol extra highlight">13%</span>
+                                <span class="product__price highlight">$55.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/lavish1.png" >
+                                <h3 class="product__title">Hair Cream</h3>
+                                <span class="product__year extra highlight">2020</span>
+                                <span class="product__region extra highlight">Lavish</span>
+                                <span class="product__varietal extra highlight">Natural Fruits</span>
+                                <span class="product__alcohol extra highlight">13%</span>
+                                <span class="product__price highlight">$55.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+
+                    </div>
+					<div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="./images/care4.png"  alt="Product 1" />
+                                <h3 class="product__title">Hair Cream</h3>
+                                <span class="product__year extra highlight">2009</span>
+                                <span class="product__region extra highlight">Kerastase</span>
+                                <span class="product__varietal extra highlight">Egg Combination Of Milk</span>
+                                <span class="product__alcohol extra highlight">13%</span>
+                                <span class="product__price highlight">$55.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+
+                    </div>
+					<div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/shinning_shampoo-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Shampoo</h3>
+                                <span class="product__year extra highlight">2012</span>
+                                <span class="product__region extra highlight">Hair Cream</span>
+                                <span class="product__varietal extra highlight">Shinning Shampoo</span>
+                                <span class="product__alcohol extra highlight">20%</span>
+                                <span class="product__price highlight">$58.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+
+                    </div>
+					<div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/straightshampoo-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Shampoo</h3>
+                                <span class="product__year extra highlight">2015</span>
+                                <span class="product__region extra highlight">Playa</span>
+                                <span class="product__varietal extra highlight">Straight Hair Shampoo</span>
+                                <span class="product__alcohol extra highlight">20%</span>
+                                <span class="product__price highlight">$58.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+
+                    </div>
+					<div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/growthshampoo12-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Shampoo</h3>
+                                <span class="product__year extra highlight">2022</span>
+                                <span class="product__region extra highlight">Palmolive</span>
+                                <span class="product__varietal extra highlight">Growth Shampoo</span>
+                                <span class="product__alcohol extra highlight">20%</span>
+                                <span class="product__price highlight">$58.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+
+                    </div>
+                    
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/straightcond-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Conditioner</h3>
+                                <span class="product__year extra highlight">2006</span>
+                                <span class="product__region extra highlight">Sunsilk</span>
+                                <span class="product__varietal extra highlight">Straight Hair Conditioner</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$60.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+
+                    </div>
+
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/conditioner.webp" alt="Product 1" />
+                                <h3 class="product__title">Conditioner</h3>
+                                <span class="product__year extra highlight">2009</span>
+                                <span class="product__region extra highlight">Tresemme</span>
+                                <span class="product__varietal extra highlight">Bold Conditioner</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$60.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/thickinigcond-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Conditioner</h3>
+                                <span class="product__year extra highlight">2001</span>
+                                <span class="product__region extra highlight">Thicking Conditioner</span>
+                                <span class="product__varietal extra highlight">Revitalash</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$60.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>    
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/hair_png-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Serum</h3>
+                                <span class="product__year extra highlight">2002</span>
+                                <span class="product__region extra highlight">Glowing Serum</span>
+                                <span class="product__varietal extra highlight">Maria B</span>
+                                <span class="product__alcohol extra highlight">10%</span>
+                                <span class="product__price highlight">$20.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>     
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/serum3-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Serum</h3>
+                                <span class="product__year extra highlight">2002</span>
+                                <span class="product__region extra highlight">Growthing Serum</span>
+                                <span class="product__varietal extra highlight">Olay</span>
+                                <span class="product__alcohol extra highlight">10%</span>
+                                <span class="product__price highlight">$20.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>  
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/moisturingcond-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Serum</h3>
+                                <span class="product__year extra highlight">2003</span>
+                                <span class="product__region extra highlight">Pippel Serum</span>
+                                <span class="product__varietal extra highlight">Pupa</span>
+                                <span class="product__alcohol extra highlight">10%</span>
+                                <span class="product__price highlight">$20.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>  
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/facemask5.png" alt="Product 1" />
+                                <h3 class="product__title">Face Mask</h3>
+                                <span class="product__year extra highlight">20017</span>
+                                <span class="product__region extra highlight">Candy Face Mask</span>
+                                <span class="product__varietal extra highlight">Pupa</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$50.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/facemask4.png" alt="Product 1" />
+                                <h3 class="product__title">Face Mask</h3>
+                                <span class="product__year extra highlight">20017</span>
+                                <span class="product__region extra highlight">Coconut Face Mask</span>
+                                <span class="product__varietal extra highlight">Pupa</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$50.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/facemask3.png" alt="Product 1" />
+                                <h3 class="product__title">Face Mask</h3>
+                                <span class="product__year extra highlight">20017</span>
+                                <span class="product__region extra highlight">Creama Salore</span>
+                                <span class="product__varietal extra highlight">Pupa</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$50.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/grapeseedoil-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Hair Oil</h3>
+                                <span class="product__year extra highlight">2016</span>
+                                <span class="product__region extra highlight">Grapeseed Oil</span>
+                                <span class="product__varietal extra highlight">Zenobia</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$50.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/coconutoil-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Hair Oil</h3>
+                                <span class="product__year extra highlight">2015</span>
+                                <span class="product__region extra highlight">Coconut Oil</span>
+                                <span class="product__varietal extra highlight">KPL Sudhi</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$50.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-sm-12">
+                        <div class="product">
+                            <div class="product__info">
+                                <img class="product__image" src="images/almoundoil-removebg-preview.png" alt="Product 1" />
+                                <h3 class="product__title">Hair Oil</h3>
+                                <span class="product__year extra highlight">2016</span>
+                                <span class="product__region extra highlight">Grapeseed Oil</span>
+                                <span class="product__varietal extra highlight">Zenobia</span>
+                                <span class="product__alcohol extra highlight">30%</span>
+                                <span class="product__price highlight">$50.90</span>
+                                <button class="action action--button action--buy">  <i class="fa fa-shopping-c  art"></i><span class="action__text">Add to cart</span></button>
+                            </div>
+                            <label class="action action--compare-add"><input class="check-hidden" type="checkbox" /><i class="fa fa-plus"></i><i class="fa fa-check"></i><span class="action__text action__text--invisible">Add to compare</span></label>
+                        </div>
+                    </div>
+                </div>
+			</section>
+		</div><!-- /view -->
+		<!-- product compare wrapper -->
+		<section class="compare">
+			<button class="action action--close"><i class="fa fa-remove"></i><span class="action__text action__text--invisible">Close comparison overlay</span></button>
+		</section>
+
+		<div id="footer"></div>
+
+
+	</body>
+</html>
+	<!-- Modernizr is used for flexbox fallback -->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/classie.js"></script>
+		<script src="js/main.js"></script>
+<script src="js/e-project-AAH-1.js"></script>
